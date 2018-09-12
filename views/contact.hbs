@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static "/More/Contact/contact.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="{% static "/More/Contact/contact.js" %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title></title>
+  </head>
+
+  <body>
+
+
+{{> nav}}
+  <h2>Contact Us</h2>
+  <p></p>
+
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div id="map" style="width:100%;height:500px"></div>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // Initialize google maps
+  function myMap() {
+    var myCenter = new google.maps.LatLng(19.044497,72.8204535);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 12};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqGKLR_Yq1rzSWKCB5J_CZHL-lm4WYVB0&callback=myMap"></script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

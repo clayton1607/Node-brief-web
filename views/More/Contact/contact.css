@@ -1,0 +1,859 @@
+
+.jumbotron {
+    background-color: white; /* Orange */
+    background-color: #2d2d30;
+    border: 2px;
+     overflow: hidden;
+
+    * Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #2d2d30;
+    z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 30px;
+    padding-bottom: 0px;
+
+    margin-bottom: 0 !important;
+    background-color: #2d2d30 !important;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}/*
+.menu{
+  align-self: flex-end;
+  display: inline-block;
+  width: 120px;
+  padding-left: 20px;
+  height: 72px;
+  padding-top: 8px;
+  font-size: 14px;
+      box-sizing: inherit;
+}
+.clickable {
+    cursor: pointer;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.row{
+  box-sizing: inherit;
+  padding-top: 110px;
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  padding-top: 25px;
+}
+.heading{
+
+}
+/*
+.card1{
+  pos
+  align-items: center;
+  height: auto;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+*/
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  min-height: 550px;
+  box-sizing: inherit;
+}
+.card_stack{
+  width: 100%;
+  display: block;
+  margin-left: 2%;
+  amargin-right: 2%;
+  box-sizing: inherit;
+
+}
+.card1{
+  z-index: :1;
+  width: 96%;
+  height: 500px;
+  margin-left: 2%;
+  margin-right: 2%;
+  max-width: 600px;
+  position: relative;
+    display: block;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 8px 16px 8px 8px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-sizing: inherit;
+}
+
+.image1{
+  background-image:url("1.jpeg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image2{
+  background-image:url("2.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image3{
+  background-image:url("3.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+
+.image5{
+  background-image:url("4.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image6{
+  background-image:url("5.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image7{
+  background-image:url("6.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image8{
+  background-image:url("7.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image9{
+  background-image:url("8.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image10{
+  background-image:url("9.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image11{
+  background-image:url("10.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image12{
+  background-image:url("11.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image13{
+  background-image:url("12.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image14{
+  background-image:url("13.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image15{
+  background-image:url("14.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image16{
+  background-image:url("15.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image17{
+  background-image:url("16.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image18{
+  background-image:url("17.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+.image19{
+  background-image:url("18.jpg");
+  width: 96%;
+  height: 300px;
+  margin-left: 0;
+  margin-top: 0;
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  box-sizing: inherit;
+  display: block;
+}
+
+.title1{
+  width: 96%;
+    margin-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 24px;
+    left: 10px;
+    right: 10px;
+      margin-top: 305px;
+}
+
+.container-fluid{
+    padding-top:10%;
+    padding-bottom: 10%;
+    padding max-height: 10px;
+    box-sizing: inherit;
+
+}
+
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  background-color: #2D3142;
+  -webkit-transition: transform .7s ease-in-out;
+  -moz-transition: transform .7s ease-in-out;
+  -ms-transition: transform .7s ease-in-out;
+  -o-transition: transform .7s ease-in-out;
+  transition: transform .7s ease-in-out;
+}
+
+.sidebar {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  right: 0;
+  background-color: #EF8354;
+}
+
+.bar {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: #EF8354;
+  margin: 10px auto;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.nav-right.visible-xs {
+  z-index: 3;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.button.active .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+.button.active .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.button.active .middle {
+  width: 0;
+}
+
+.move-to-left {
+  -webkit-transform: translateX(-400px);
+  -moz-transform: translateX(-400px);
+  -ms-transform: translateX(-400px);
+  -o-transform: translateX(-400px);
+  transform: translateX(-400px);
+}
+
+nav {
+  padding-top: 30px;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.sidebar-item {
+  margin: 30px 0;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.sidebar-item:first-child {
+  -webkit-transition: all .7s .2s ease-in-out;
+  -moz-transition: all .7s .2s ease-in-out;
+  -ms-transition: all .7s .2s ease-in-out;
+  -o-transition: all .7s .2s ease-in-out;
+  transition: all .7s .2s ease-in-out;
+}
+
+.sidebar-item:nth-child(2) {
+  -webkit-transition: all .7s .4s ease-in-out;
+  -moz-transition: all .7s .4s ease-in-out;
+  -ms-transition: all .7s .4s ease-in-out;
+  -o-transition: all .7s .4s ease-in-out;
+  transition: all .7s .4s ease-in-out;
+}
+
+.sidebar-item:nth-child(3) {
+  -webkit-transition: all .7s .6s ease-in-out;
+  -moz-transition: all .7s .6s ease-in-out;
+  -ms-transition: all .7s .6s ease-in-out;
+  -o-transition: all .7s .6s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+
+.sidebar-item:last-child {
+  -webkit-transition: all .7s .8s ease-in-out;
+  -moz-transition: all .7s .8s ease-in-out;
+  -ms-transition: all .7s .8s ease-in-out;
+  -o-transition: all .7s .8s ease-in-out;
+  transition: all .7s .6s ease-in-out;
+}
+
+.sidebar-item.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.sidebar-anchor {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.sidebar-anchor:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+.sidebar-anchor:hover:before {
+  width: 100%;
+}
+
+.ua {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+}
+
+.fa {
+  font-size: 1.4em;
+  color: #EF8354;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.ua:hover .fa {
+  color: #FFF;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media (min-width: 480px) {
+  .nav-list {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-right {
+    position: absolute;
+  }
+  .hidden-xs {
+    display: block;
+  }
+  .visible-xs {
+    display: none;
+  }
+}
+h1 {
+  margin-top: 0px !important;
+}
+.navbar {
+  align-items: center;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+    height: 80px !important;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+/*
+<div class="jumbotron text-center" style="padding-top:30px;padding-bottom:0px;">
+
+    <a href="#"><h2   >BRIEF</h2></a>
+
+</div>
+*/
+.show_more{
+  align-items: center !important;
+}
+button{
+    height:30px;
+    width:200px !important;
+    margin: -20px -50px;
+    position:relative;
+    top:50%;
+    left:50%;
+     margin: 0 auto;
+}
