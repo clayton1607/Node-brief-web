@@ -3,7 +3,7 @@ const hbs=require('hbs');
 
 var app=express();
 
-
+const port =process.env.PORT || 3000 ;
 hbs.registerPartials(__dirname + '/views/Partials')
 app.set('view engine','hbs');
 app.get('/',(req,res) => {
@@ -28,5 +28,5 @@ app.get('/extraa',(req,res) => {
 app.get('/sports',(req,res) => {
   res.render('sports.hbs');
 })
-app.listen(3000);
-console.log("starting server");
+app.listen(port);
+console.log('starting server'+port );
